@@ -14,7 +14,7 @@ func GetOrder() gin.HandlerFunc {
 	}
 }
 
-func CreateCreateOrderMenu() gin.HandlerFunc {
+func CreateOrder() gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 	}
