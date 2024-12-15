@@ -194,6 +194,7 @@ func UpdateFood() gin.HandlerFunc {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": msg})
 			return
 		}
+		defer cancel()
 		c.JSON(http.StatusOK, result)
 	}
 }
